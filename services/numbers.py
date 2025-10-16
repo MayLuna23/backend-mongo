@@ -48,6 +48,7 @@ class NumberService:
             
             numbers_list = [
                 {
+                    "id": str(num["_id"]),
                     "value": num["value"],
                     "created_at": num["created_at"]
                 }

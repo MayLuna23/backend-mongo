@@ -6,8 +6,6 @@ import traceback
 
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
     """Manejo de errores de validación"""
-
-    # 🔹 Limpia los errores para que sean serializables
     clean_errors = []
     for e in exc.errors():
         ctx = e.get("ctx")

@@ -28,8 +28,6 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: admin123
       MONGO_INITDB_DATABASE: numbers_db
     volumes:
-      # - mongodb_data:/data/db
-      # - mongodb_config:/data/configdb
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     networks:
       - app_network

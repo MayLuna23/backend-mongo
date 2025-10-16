@@ -19,7 +19,6 @@ async def lifespan(app: FastAPI):
     logger.info("Cerrando aplicación...")
     await close_mongo_connection()
 
-# Crear aplicación FastAPI
 app = FastAPI(
     title="API de Números con JWT",
     description="API REST para autenticación JWT y gestión de números",
@@ -32,7 +31,7 @@ app = FastAPI(
 # Configurar CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # En producción, especifica los orígenes permitidos
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

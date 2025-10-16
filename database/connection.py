@@ -7,14 +7,20 @@ class Database:
     
 db = Database()
 
+
 async def connect_to_mongo():
     """Conectar a MongoDB"""
     try:
         db.client = AsyncIOMotorClient(settings.MONGODB_URL)
+
+        # Intentar un 'ping' para verificar la conexión
+        await db.client.admin.command('ping')
+        
         logger.info("Conexión exitosa a MongoDB")
     except Exception as e:
-        logger.error(f"Error conectando a MongoDB: {e}")
+        logger.error(f"Error conectando a MongoDB")
         raise e
+
 
 async def close_mongo_connection():
     """Cerrar conexión a MongoDB"""

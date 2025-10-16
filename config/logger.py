@@ -10,7 +10,7 @@ if not os.path.exists("logs"):
 # Solo usar archivo en producción, en desarrollo solo consola
 USE_FILE_LOGGING = os.getenv("USE_FILE_LOGGING", "False").lower() == "true"
 
-handlers = [logging.StreamHandler()]  # Siempre mostrar en consola
+handlers = [logging.StreamHandler()]
 
 if USE_FILE_LOGGING:
     log_filename = f"logs/api_{datetime.now().strftime('%Y%m%d')}.log"

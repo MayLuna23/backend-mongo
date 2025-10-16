@@ -19,6 +19,7 @@ class NumberCreate(BaseModel):
         }
 
 class NumberResponse(BaseModel):
+    id: str
     value: int
     created_at: str
     
