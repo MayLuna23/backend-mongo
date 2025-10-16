@@ -1,0 +1,102 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.env.local
+.venv/
+ENV/
+env.bak/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+
+# ============================
+# ⚙️ FastAPI / Uvicorn
+# ============================
+
+# Uvicorn / Gunicorn logs
+*.pid
+*.sock
+
+# ============================
+# 🐳 Docker
+# ============================
+
+# Docker build artifacts
+**/Dockerfile~
+**/docker-compose.override.yml
+**/docker-compose.dev.yml
+
+# ============================
+# 🧠 VSCode / IDEs
+# ============================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================
+# 🗄️ MongoDB / Database
+# ============================
+
+# MongoDB data volumes
+/data/
+mongodb_data/
+*.bson
+*.json
+*.lock
+
+# ============================
+# 📜 Misc
+# ============================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python type checker
+.mypy_cache/
+.pyre/
+.pytype/
+.dmypy.json
+dmypy.json
