@@ -29,7 +29,8 @@ Esto levantará la API con FastAPI, la Base de datos MongoDB y
 la interfaz grafica Mongo Express en segundo plano.
 
 ### Swagger ###
-Una vez iniciada la API, puedes acceder a la documentación desde tu navegador:
+Una vez iniciada la API esta corre en el puerto 8080,
+puedes acceder a la documentación desde tu navegador:
 
 Swagger UI: http://localhost:8080/docs
 
